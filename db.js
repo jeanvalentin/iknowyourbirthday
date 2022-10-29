@@ -4,6 +4,8 @@ const { writeFileSync } = require('fs');
 const prisma = new PrismaClient()
 
 async function main() {
+  // quick add
+  // await prisma.birthday.create({ data: { year: 2000, month: 1, day: 1, name: 'George' } });
   // quick update
   // await prisma.birthday.updateMany({ where: { name: 'Bobby' }, data: { year: 1984 } });
 
