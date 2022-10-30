@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Happy birthday!
 
-## Getting Started
+Oh you remembered my birthday, that's so nice of you! How?
 
-First, run the development server:
+Well I remember your birthday because you're important to me, and definitely not because some app told me it was your birthday this morning.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## How it works
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Live with my own data: https://iknowyourbirthday.surge.sh/
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The page displays the date and everyone whose birthday is today. Now you can wish them a happy birthday when you see them, because you totally remember it is their birthday.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Build your own
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Clone the repo
+- Install dependencies: `npm i`
+- Generate prisma client: `npx prisma generate`
+- Create the database: `npx prisma db push`
+- Fill the SQLite database located at `prisma/birthdays.db` with your data. An entry has a name, a day, a month, and maybe a year.
+- Generate a JSON dump to be imported by the application: `npm dump`
+- See the results: `npm run dev`
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you wish to host it online, you may use `npm deploy` after changing whatever URL is configured for surge in `package.json`. Or you can do something else entirely, your call.
