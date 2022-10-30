@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "surge": "npx surge --domain https://iknowyourbirthday.surge.sh out"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
