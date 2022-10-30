@@ -1,7 +1,9 @@
 import { Container, Text, Title } from '@mantine/core';
 import dayjs from 'dayjs';
 import Head from 'next/head';
+import Link from 'next/link';
 import birthdays from '../birthdays.json';
+import GitHubLogo from '../components/GitHubLogo';
 
 export default function Home() {
   const now = dayjs();
@@ -17,6 +19,10 @@ export default function Home() {
         {v.year && <>: {now.get('y') - v.year} ({v.year})</>}
       </Text>
     })}
-    <Text></Text>
+    <div style={{ position: 'absolute', bottom: 8, right: 8 }}>
+      <Link href="https://github.com/jeanvalentin/iknowyourbirthday">
+        <GitHubLogo />
+      </Link>
+    </div>
   </Container>
 }
