@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "dump": "node db.js",
     "start": "next start",
     "lint": "next lint",
-    "surge": "npx surge --domain https://iknowyourbirthday.surge.sh out"
+    "surge": "npx surge --domain https://iknowyourbirthday.surge.sh out",
+    "deploy": "npm run dump && npm run build && npm run surge"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
