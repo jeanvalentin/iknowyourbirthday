@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "npx serve public",
     "dump": "node db.js",
     "surge": "npx surge --domain https://iknowyourbirthday.surge.sh public",
     "deploy": "npm run dump &&  npm run surge"
