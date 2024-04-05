@@ -3,27 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
+    "dev": "node server.js",
     "dump": "node db.js",
-    "start": "next start",
-    "lint": "next lint",
-    "surge": "npx surge --domain https://iknowyourbirthday.surge.sh out",
-    "deploy": "npm run dump && npm run build && npm run surge"
+    "surge": "npx surge --domain https://iknowyourbirthday.surge.sh public",
+    "deploy": "npm run dump &&  npm run surge"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@mantine/core": "^5.6.3",
-    "@mantine/hooks": "^5.6.3",
-    "@prisma/client": "^4.5.0",
-    "dayjs": "^1.11.6",
-    "next": "13.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@prisma/client": "^4.5.0"
   },
   "devDependencies": {
-    "eslint": "8.26.0",
-    "eslint-config-next": "13.0.0",
     "prisma": "^4.5.0"
   }
 }

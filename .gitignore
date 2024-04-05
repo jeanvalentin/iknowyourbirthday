@@ -36,5 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 prisma/birthdays.db
-birthdays.json
+public/birthdays.json
 dummy.js

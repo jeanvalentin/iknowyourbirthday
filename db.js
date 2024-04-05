@@ -12,7 +12,7 @@ async function main() {
       name: true,
     },
   });
-  writeFileSync('birthdays.json', JSON.stringify(dump));
+  writeFileSync('public/birthdays.json', JSON.stringify(dump));
 }
 
 main()
