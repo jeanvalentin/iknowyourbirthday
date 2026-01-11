@@ -6,8 +6,6 @@ Well I remember your birthday because you're important to me, and definitely not
 
 ## How it works
 
-Live with my own data: https://iknowyourbirthday.surge.sh/
-
 The page displays the date and everyone whose birthday is today. Now you can wish them a happy birthday when you see them, because you totally remember it is their birthday.
 
 ## Build your own
